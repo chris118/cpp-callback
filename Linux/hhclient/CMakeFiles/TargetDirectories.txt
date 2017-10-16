@@ -1,0 +1,3 @@
+/sh/cpp-callback/Linux/hhclient/CMakeFiles/edit_cache.dir
+/sh/cpp-callback/Linux/hhclient/CMakeFiles/rebuild_cache.dir
+/sh/cpp-callback/Linux/hhclient/CMakeFiles/hhclient.dir

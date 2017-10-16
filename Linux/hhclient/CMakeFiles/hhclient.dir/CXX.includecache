@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/sh/cpp-callback/Linux/hhclient/HHClient.cpp
+stdio.h
+-
+HHClient.hpp
+/sh/cpp-callback/Linux/hhclient/HHClient.hpp
+HHClientImpl.hpp
+/sh/cpp-callback/Linux/hhclient/HHClientImpl.hpp
+
+/sh/cpp-callback/Linux/hhclient/HHClient.hpp
+string
+-
+vector
+-
+
+/sh/cpp-callback/Linux/hhclient/HHClientImpl.hpp
+stdio.h
+-
+HHClient.hpp
+/sh/cpp-callback/Linux/hhclient/HHClient.hpp
+

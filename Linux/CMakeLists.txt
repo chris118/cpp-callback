@@ -4,12 +4,12 @@ project (demo)
 
 aux_source_directory(. PROJECT_SOURCE_DIR)
 
-LINK_DIRECTORIES(./HHClient/)
+LINK_DIRECTORIES(./hhclient/)
 
-include_directories (./HHClient/)
+include_directories (./hhclient/)
 
 add_executable(demo ${PROJECT_SOURCE_DIR})
 
 target_link_libraries(demo
-   HHClient
+   hhclient
 )

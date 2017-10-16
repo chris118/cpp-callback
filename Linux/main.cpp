@@ -16,7 +16,6 @@ using namespace HHClientNS;
 
 class HHCallback: public HHlientCallback{
      void onAlarm(const HHAlarm &alarm) {
-         printf("%s\n", alarm.bz.c_str());
      }
 };
 

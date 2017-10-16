@@ -14,17 +14,36 @@
 
 namespace HHClientNS
 {
-    enum HHResult                    //接口返回值
+    enum HHResult                       //接口返回值
     {
-        OK = 0,                     //OK
-        LOGIN_DUPLICATE = 1,        //重复登录
-        NET_ERROR      = 2,            //网络错误
-        NOT_LOGIN      = 3,            //未登录
+        OK = 0,                         //OK
+        LOGIN_DUPLICATE = 1,            //重复登录
+        NET_ERROR      = 2,             //网络错误
+        NOT_LOGIN      = 3,             //未登录
+    };
+
+    enum HHAlarmType{
+        NONE = 0,
+        CAP = 1,
+        JACKET = 2,
+        CAR = 3
     };
     
     struct HHAlarm
     {
-        std::string bz;             //备注
+        int id;
+        HHAlarmType arlarm_type;    //报警类型
+        long timestamp;             //报警时间
+        int coordinate[4];           //x,y,with,heihgt
+        long start_timestamp;        //报警开始时间
+        long end_timestamp;          //报警结束时间  
+        float credibility;           //得分        
+        long alarm_pic_size;        
+        char* alarm_pic;            //报警图片
+        long alarm_vid_size;        
+        char* alarm_vid;            //报警视频
+        long src_image_size;        
+        char* src_image;            //原图
     };
     
     class HHlientCallback
